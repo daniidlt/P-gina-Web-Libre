@@ -12,5 +12,6 @@ Web oficial dedicada a la nueva ola del género urbano en PR, destacando a artis
 2.  **Artistas & Equipos:** Perfiles y colaboradores (Haze, Yama, etc.).
 3.  **Shows:** Agenda de conciertos con enlaces a tickets y videos.
 
+Video de presentanción: https://youtu.be/QeXESjaMP6k
 ---
 **Desarrollado por:** [Daniel]
