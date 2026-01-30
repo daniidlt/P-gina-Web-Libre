@@ -1,0 +1,1617 @@
+/* INDEX */ 
+/* ESTILOS GENERALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* HEADER */
+header {
+    background-image: 
+        linear-gradient(135deg, rgba(0, 40, 120, 0.94), rgba(0, 20, 60, 0.85)), url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Flag_of_Puerto_Rico_%281952%E2%80%931995%29.svg/250px-Flag_of_Puerto_Rico_%281952%E2%80%931995%29.svg.png');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 5px solid #ED0000; 
+}
+
+header h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* NAVEGACIÓN DEL HEADER */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+header nav ul li a:hover {
+    background-color: #ED0000;
+    border-color: #ED0000;
+    transform: translateY(-2px);
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: white;
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+    border-left: 5px solid #0038A8; 
+}
+
+/* Títulos */
+section h2, section h3 {
+    color: #ED0000; 
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#Logro img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
+
+/* BOTONES CLAVE DEL ÉXITO */
+#Clave nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+#Clave button {
+    background-color: #0038A8; 
+    border: none;
+    border-radius: 5px;
+    padding: 0; 
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#Clave button a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+#Clave button:hover {
+    background-color: #ED0000; 
+    transform: translateY(-3px);
+}
+
+#Clave button li {
+    list-style: none;
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #0038A8; 
+    color: white;
+    padding: 40px 0;
+    margin-top: 40px;
+    border-top: 5px solid #ED0000;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.footer-contacto h5 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+
+.email-link {
+    color: white;
+    font-weight: bold;
+    border-bottom: 1px dashed white;
+}
+
+.email-link:hover {
+    color: #ED0000;
+    border-bottom-color: #ED0000;
+}
+
+.footer-redes ul {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-redes a {
+    background-color: white;
+    color: #0038A8;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.footer-redes a:hover {
+    background-color: #ED0000;
+    color: white;
+}
+
+/* Artistas Destacados */
+section.artistas-destacados {
+    background: transparent; 
+    box-shadow: none;        
+    border: none;            
+    padding: 0;              
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.artistas-destacados article {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border-top: 5px solid #0038A8; 
+}
+
+.artistas-destacados article:hover {
+    transform: translateY(-10px); 
+}
+
+.artistas-destacados article img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.artistas-destacados article h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 20px 0 10px;
+    color: #0038A8;
+}
+
+.bio-data, .info-bassy p {
+    padding: 0 20px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.bio-data p, .info-bassy p {
+    margin-bottom: 8px;
+    border-bottom: 1px dashed #eee;
+}
+
+.bio-data strong, .info-bassy strong {
+    color: #ED0000;
+}
+
+.artistas-destacados article a {
+    margin-top: auto;
+    display: block;
+    background-color: #0038A8;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.artistas-destacados article a:hover {
+    background-color: #ED0000;
+}
+
+/* DE LA ROSE */
+section.delarose-principal {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 30px; 
+    align-items: start;
+    
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #050505;
+    padding: 50px;
+}
+
+.delarose-principal article {
+    background-color: #111;
+    border: 1px solid #222;
+    border-top: 5px solid #D90000; 
+    padding: 40px;
+    border-radius: 0 0 15px 15px;
+    color: #ccc;
+    display: flex; flex-direction: column; justify-content: space-between;
+    
+    grid-column: span 3; 
+}
+
+.duo-delarose {
+    grid-column: 2 / 6 !important; 
+    text-align: center; 
+}
+
+.delarose-album { grid-row: span 2; }
+
+.delarose-principal h2 { 
+    font-size: 2.2rem; 
+    color: #D90000; 
+    text-transform: uppercase; 
+    margin-bottom: 15px; 
+    text-shadow: 0 0 15px rgba(217, 0, 0, 0.4); }
+.delarose-principal h3 { 
+    font-size: 1.5rem; 
+    color: white; 
+    margin-bottom: 10px; 
+    text-transform: uppercase; 
+}
+.delarose-principal p, .delarose-principal li { 
+    font-size: 1rem; 
+    color: #aaa; 
+    margin-bottom: 5px; }
+.delarose-principal strong { 
+    color: #D90000; 
+}
+.tracklist-dela { 
+    background: #000; 
+    padding: 20px; 
+    margin-top: 20px; 
+    border-left: 3px solid #D90000; 
+    text-align: left; }
+.tracklist-dela ol { 
+    column-count: 2; 
+    gap: 20px; }
+
+
+.delarose-principal button {
+    grid-column: span 2; 
+    
+    background: transparent;
+    border: 2px solid #D90000;
+    border-radius: 8px;
+    margin-top: 40px; 
+    height: 55px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex; align-items: center; justify-content: center;
+}
+
+.delarose-principal button a {
+    color: #D90000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.delarose-principal button li { list-style: none; } 
+/* Efecto Hover */
+.delarose-principal button:hover {
+    background: #D90000;
+    box-shadow: 0 0 25px rgba(217, 0, 0, 0.5);
+    transform: translateY(-2px);
+}
+.delarose-principal button:hover a { 
+    color: black; 
+}
+
+#atras-dela, #verequipo-dela, #siguiente-dela {
+    grid-row: 4; 
+    margin-top: 30px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#atras-dela { 
+    grid-column: 1 / 3; 
+}
+
+#verequipo-dela { 
+    grid-column: 3 / 5; 
+}
+
+#siguiente-dela { 
+    grid-column: 5 / 7; 
+}
+
+/* OMAR COURTZ */
+section.omar-principal {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 30px; 
+    align-items: start;
+    
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    
+    background-color: #1a000a; 
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.omar-principal article {
+    background: linear-gradient(145deg, #2b0014, #0d0d0d);
+    border: 1px solid #4a0022;
+    border-top: 5px solid #FF007F; 
+    padding: 40px;
+    border-radius: 0 0 15px 15px;
+    color: #eee;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    grid-column: span 3; 
+    box-shadow: 0 10px 30px rgba(255, 0, 127, 0.1);
+}
+
+.omar-album { 
+    grid-row: span 2; 
+}
+
+.duo-omar {
+    grid-column: 2 / 6 !important; 
+    text-align: center;
+    border-top: 5px solid #FF69B4; 
+}
+
+.omar-principal h2 { 
+    font-size: 2.2rem; 
+    color: #FF007F; 
+    text-transform: uppercase; 
+    margin-bottom: 15px; 
+    text-shadow: 0 0 20px rgba(255, 0, 127, 0.6); 
+}
+
+.omar-principal h3, .omar-principal h4 { 
+    font-size: 1.5rem; 
+    color: white; 
+    margin-bottom: 10px; 
+    text-transform: uppercase; 
+}
+
+.omar-principal p { 
+    color: #ffb3d9; 
+}
+
+.omar-principal strong { 
+    color: #FF007F; 
+    text-shadow: 0 0 5px rgba(255, 0, 127, 0.2);
+}
+
+/* --- TRACKLIST --- */
+.tracklist-omar { 
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+    margin-top: 20px; 
+    border-left: 3px solid #FF007F; 
+    text-align: left; 
+}
+
+.tracklist-omar h5 {
+    color: #FF007F;
+    margin-bottom: 10px;
+}
+
+.tracklist-omar ol { 
+    column-count: 2; 
+    gap: 20px; 
+    color: #ccc;
+}
+
+.omar-principal button {
+    grid-column: span 2; 
+    background: rgba(255, 0, 127, 0.05); 
+    border: 2px solid #FF007F;
+    border-radius: 8px;
+    margin-top: 40px;
+    height: 55px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.omar-principal button a {
+    color: #FF007F;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Efecto Hover */
+.omar-principal button:hover {
+    background: #FF007F;
+    box-shadow: 0 0 30px rgba(255, 0, 127, 0.8);
+    transform: translateY(-3px);
+}
+
+.omar-principal button:hover a { 
+    color: white; 
+}
+
+#atras-omar, #verequipo-omar, #siguiente-omar {
+    grid-row: 4; 
+    margin-top: 30px;
+}
+#atras-omar { grid-column: 1 / 3; }
+#verequipo-omar { grid-column: 3 / 5; }
+#siguiente-omar { grid-column: 5 / 7; }
+
+/*DEI V*/
+section.deiv-principal {
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 30px; 
+    align-items: start;
+    
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #050505;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+
+.deiv-principal article {
+    background-color: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    border-top: 5px solid #FFD700; 
+    padding: 40px;
+    border-radius: 0 0 15px 15px;
+    color: #eee;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    grid-column: span 3; 
+}
+
+.deiv-album { 
+    grid-row: span 2; 
+}
+
+.duo-deiv {
+    grid-column: 2 / 6 !important; 
+    text-align: center;
+    border-top: 5px solid #FFFF00; 
+}
+
+.deiv-principal h2 { 
+    font-size: 2.2rem; 
+    color: #FFD700; 
+    text-transform: uppercase; 
+    margin-bottom: 15px; 
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.3); 
+}
+
+.deiv-principal h3, .deiv-principal h4 { 
+    font-size: 1.5rem; 
+    color: white; 
+    margin-bottom: 10px; 
+    text-transform: uppercase; 
+}
+
+.deiv-principal p, .deiv-principal li { 
+    font-size: 1rem; 
+    color: #bbb; 
+    margin-bottom: 5px; 
+}
+
+.deiv-principal strong { 
+    color: #FFD700; 
+}
+
+.tracklist-deiv { 
+    background: #000; 
+    padding: 20px; 
+    margin-top: 20px; 
+    border-left: 3px solid #FFD700; 
+    text-align: left; 
+}
+
+.tracklist-deiv h5 {
+    color: #FFD700;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.tracklist-deiv ol { 
+    column-count: 2; 
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.deiv-principal button {
+    grid-column: span 2; 
+    background: transparent;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    margin-top: 40px;
+    height: 55px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.deiv-principal button a {
+    color: #FFD700;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.deiv-principal button li { 
+    list-style: none; 
+}
+
+.deiv-principal button:hover {
+    background: #FFD700;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.5);
+    transform: translateY(-2px);
+}
+
+.deiv-principal button:hover a { 
+    color: black; 
+}
+
+#atras-deiv, #verequipo-deiv, #siguiente-deiv {
+    grid-row: 4; 
+    margin-top: 30px;
+}
+
+#atras-deiv { grid-column: 1 / 3; }
+#verequipo-deiv { grid-column: 3 / 5; }
+#siguiente-deiv { grid-column: 5 / 7; }
+
+/* ALEJO */
+section.alejo-principal {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 30px; 
+    align-items: start;
+    
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #000814; 
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.alejo-principal article {
+    background: linear-gradient(145deg, #001d3d, #000814);
+    border: 1px solid #003566;
+    border-top: 5px solid #00B4D8;
+    padding: 40px;
+    border-radius: 0 0 15px 15px;
+    color: #eee;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    grid-column: span 3; 
+    box-shadow: 0 10px 30px rgba(0, 180, 216, 0.1);
+}
+
+/* --- AJUSTES DE DISTRIBUCIÓN --- */
+.alejo-album1, .alejo-album2 { 
+    grid-row: span 2; 
+}
+
+.duo-alejo {
+    grid-column: 2 / 6 !important; 
+    text-align: center;
+    border-top: 5px solid #90E0EF; 
+}
+
+.alejo-principal h2 { 
+    font-size: 2.2rem; 
+    color: #00B4D8; 
+    text-transform: uppercase; 
+    margin-bottom: 15px; 
+    text-shadow: 0 0 15px rgba(0, 180, 216, 0.5); 
+}
+
+.alejo-principal h3, .alejo-principal h4 { 
+    font-size: 1.5rem; 
+    color: white; 
+    margin-bottom: 10px; 
+    text-transform: uppercase; 
+}
+
+.alejo-principal p { 
+    font-size: 1rem; 
+    color: #caf0f8; 
+    margin-bottom: 10px; 
+}
+
+.alejo-principal strong { 
+    color: #00B4D8; 
+}
+
+.tracklist-alejo, .tracklist-alejo2 { 
+    background: rgba(0, 0, 0, 0.4); 
+    padding: 20px; 
+    margin-top: 20px; 
+    border-left: 3px solid #00B4D8; 
+    text-align: left; 
+}
+
+.tracklist-alejo h5, .tracklist-alejo2 h5 {
+    color: #00B4D8;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.tracklist-alejo ol, .tracklist-alejo2 ol { 
+    column-count: 2; 
+    gap: 20px;
+    color: #90E0EF;
+    margin-bottom: 15px;
+}
+
+.alejo-principal button {
+    grid-column: span 2; 
+    background: transparent;
+    border: 2px solid #00B4D8;
+    border-radius: 8px;
+    margin-top: 40px;
+    height: 55px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.alejo-principal button a {
+    color: #00B4D8;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+.alejo-principal button li { list-style: none; }
+
+.alejo-principal button:hover {
+    background: #00B4D8;
+    box-shadow: 0 0 25px rgba(0, 180, 216, 0.6);
+    transform: translateY(-2px);
+}
+
+.alejo-principal button:hover a { 
+    color: #000814; 
+}
+
+#atras-alejo, #verequipo-alejo, #siguiente-alejo {
+    grid-row: 5; 
+    margin-top: 30px;
+}
+
+#atras-alejo { grid-column: 1 / 3; }
+#verequipo-alejo { grid-column: 3 / 5; }
+#siguiente-alejo { grid-column: 5 / 7; }
+
+/* BASSYY */
+section.bassy-principal {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 30px; 
+    align-items: start;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    background-color: #000000; 
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+
+.bassy-principal article {
+    background-color: #0a0a0a; 
+    border: 1px solid #222;
+    border-top: 5px solid #ffffff; 
+    padding: 40px;
+    border-radius: 0 0 15px 15px;
+    color: #ffffff;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    
+    grid-column: span 3; 
+    transition: transform 0.3s ease;
+}
+
+.bassy-cantante, .bassy-productor { 
+    grid-row: span 2; 
+}
+
+.bassy-principal h2 { 
+    font-size: 2.2rem; 
+    color: #ffffff; 
+    text-transform: uppercase; 
+    margin-bottom: 15px; 
+    letter-spacing: 2px;
+}
+
+.bassy-principal h3, .bassy-principal h4 { 
+    font-size: 1.5rem; 
+    color: #888;
+    margin-bottom: 10px; 
+    text-transform: uppercase; 
+}
+
+.bassy-principal p { 
+    font-size: 1rem; 
+    color: #cccccc; 
+    margin-bottom: 15px; 
+    line-height: 1.6;
+}
+
+.bassy-principal strong { 
+    color: #ffffff; 
+    border-bottom: 1px solid #ffffff;
+}
+
+.tracklist-bassyy, .producciones-bassyy { 
+    background: #111111; 
+    padding: 20px; 
+    margin-top: 20px; 
+    border-left: 3px solid #ffffff; 
+    text-align: left; 
+}
+
+.tracklist-bassyy h5, .producciones-bassyy h5 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.tracklist-bassyy ol, .producciones-bassyy ol { 
+    column-count: 1; 
+    gap: 10px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.tracklist-bassyy li, .producciones-bassyy li {
+    margin-bottom: 8px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 5px;
+}
+
+.bassy-principal button {
+    grid-column: span 3; 
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 0px; 
+    margin-top: 40px;
+    height: 60px;
+    cursor: pointer;
+    transition: 0.4s;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.bassy-principal button a {
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    letter-spacing: 3px;
+}
+
+.bassy-principal button li { list-style: none; }
+
+.bassy-principal button:hover {
+    background: #ffffff;
+}
+
+.bassy-principal button:hover a { 
+    color: #000000; 
+}
+
+#verequipo-bassyy, #atras-bassyy {
+    grid-row: 4; 
+}
+
+#verequipo-bassyy { grid-column: 1 / 4; }
+#atras-bassyy { grid-column: 4 / 7; }
+
+iframe {
+    margin-top: 10px;
+    filter: grayscale(1); 
+    transition: 0.5s;
+}
+iframe:hover {
+    filter: grayscale(0);
+}
+
+/* Equipos */
+
+button {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #fff; 
+    border: 1px solid #ddd; 
+    color: #333; 
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+button::after {
+    content: '→';
+    position: absolute;
+    right: 20px;
+    transition: 0.3s;
+    color: #999;
+}
+
+button:hover {
+    padding-left: 30px;
+    background-color: #fff; 
+}
+
+button:hover::after {
+    right: 15px;
+}
+
+
+#boton-equidelarose:hover {
+    border-color: #D90000;
+    color: #D90000;
+    background-color: #fff5f5; 
+}
+#boton-equidelarose:hover::after { color: #D90000; }
+
+#boton-equiousi:hover {
+    border-color: #FF0099;
+    color: #FF0099;
+    background-color: #fff0f9; 
+}
+#boton-equiousi:hover::after { color: #FF0099; }
+
+#boton-equideiv:hover {
+    border-color: #FFA500;
+    color: #e69500;
+    background-color: #fffaf0; 
+}
+#boton-equideiv:hover::after { color: #e69500; }
+
+#boton-equialejo:hover {
+    border-color: #00BFFF;
+    color: #00BFFF;
+    background-color: #f0fbff; 
+}
+#boton-equialejo:hover::after { color: #00BFFF; }
+
+#boton-equibassy:hover {
+    border-color: #9932CC;
+    color: #9932CC;
+    background-color: #fbf0ff; 
+}
+#boton-equibassy:hover::after { color: #9932CC; }
+
+.btn-detalle {
+    display: inline-block;
+    background-color: #D90000; 
+    color: #ffffff;
+    padding: 15px 40px; 
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 50px; 
+    border: 2px solid #D90000;
+    transition: all 0.3s ease;
+    
+    box-shadow: 0 5px 15px rgba(217, 0, 0, 0.3);
+}
+
+.btn-detalle:hover {
+    background-color: transparent; 
+    color: #D90000; 
+    
+    box-shadow: 0 0 25px rgba(217, 0, 0, 0.8); 
+    transform: translateY(-3px); 
+}
+
+.boton-izq {
+    margin-top: 50px; 
+    text-align: left; 
+    border-top: 1px solid #333; 
+    padding-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #888; 
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    border: 1px solid #333;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #fff; 
+    border-color: #fff; 
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    transform: translateX(-5px); 
+}
+
+#productores-dela {
+    background-color: #050505;
+    color: #fff;
+    padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border-top: 5px solid #D90000; 
+}
+
+/* Títulos de los productores */
+#productores-dela h3 {
+    color: #D90000;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#productores-dela p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Equipo Omar */
+.btn-detalle {
+    display: inline-block;
+    background-color: #D90000; /* Rojo De La Rose */
+    color: #ffffff;
+    padding: 15px 40px; /* Grande y cómodo */
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 50px; /* Bordes completamente redondos */
+    border: 2px solid #D90000;
+    transition: all 0.3s ease;
+    
+    /* Sombra roja inicial */
+    box-shadow: 0 5px 15px rgba(217, 0, 0, 0.3);
+}
+
+/* Efecto Hover (Al pasar el mouse) */
+.btn-detalle:hover {
+    background-color: transparent; /* Se vuelve transparente */
+    color: #D90000; /* Texto rojo */
+    
+    /* Efecto Neón Intenso */
+    box-shadow: 0 0 25px rgba(217, 0, 0, 0.8); 
+    transform: translateY(-3px); /* Se eleva un poco */
+}
+
+/* --- BOTÓN SECUNDARIO: Volver Atrás --- */
+/* Primero posicionamos el contenedor a la izquierda */
+.boton-izq {
+    margin-top: 50px; /* Separación del contenido de arriba */
+    text-align: left; 
+    border-top: 1px solid #333; /* Línea divisoria sutil */
+    padding-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #888; /* Gris discreto por defecto */
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    /* Borde sutil */
+    border: 1px solid #333;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #fff; 
+    border-color: #fff; 
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    transform: translateX(-5px); 
+}
+
+#productores-ousi {
+    background-color: #050505;
+    color: #fff;
+    padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border-top: 5px solid #D90000; /* Detalle rojo arriba */
+}
+
+/* Títulos de los productores */
+#productores-ousi h3 {
+    color: #D90000;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#productores-ousi p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.btn-detalle {
+    display: inline-block;
+    background-color: #D90000; /* Rojo De La Rose */
+    color: #ffffff;
+    padding: 15px 40px; /* Grande y cómodo */
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 50px; /* Bordes completamente redondos */
+    border: 2px solid #D90000;
+    transition: all 0.3s ease;
+    
+    /* Sombra roja inicial */
+    box-shadow: 0 5px 15px rgba(217, 0, 0, 0.3);
+}
+
+/* Efecto Hover (Al pasar el mouse) */
+.btn-detalle:hover {
+    background-color: transparent; /* Se vuelve transparente */
+    color: #D90000; /* Texto rojo */
+    
+    /* Efecto Neón Intenso */
+    box-shadow: 0 0 25px rgba(217, 0, 0, 0.8); 
+    transform: translateY(-3px); /* Se eleva un poco */
+}
+
+/* --- BOTÓN SECUNDARIO: Volver Atrás --- */
+/* Primero posicionamos el contenedor a la izquierda */
+.boton-izq {
+    margin-top: 50px; /* Separación del contenido de arriba */
+    text-align: left; 
+    border-top: 1px solid #333; /* Línea divisoria sutil */
+    padding-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #888; /* Gris discreto por defecto */
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    /* Borde sutil */
+    border: 1px solid #333;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto Hover para el botón de atrás */
+.btn:hover {
+    color: #fff; /* Texto blanco */
+    border-color: #fff; /* Borde blanco */
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    /* Pequeña animación hacia la izquierda */
+    transform: translateX(-5px); 
+}
+
+/* --- ESTILO EXTRA (Para que se vea bien el fondo de la sección) --- */
+/* Esto asegura que las letras se lean si el fondo es oscuro */
+#productores-deiv {
+    background-color: #050505; /* Fondo negro */
+    color: #fff;
+    padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border-top: 5px solid #D90000; /* Detalle rojo arriba */
+}
+
+/* Títulos de los productores */
+#productores-deiv h3 {
+    color: #D90000;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#productores-deiv p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Equipo Alejo */
+.btn-detalle {
+    display: inline-block;
+    background-color: #D90000; /* Rojo De La Rose */
+    color: #ffffff;
+    padding: 15px 40px; /* Grande y cómodo */
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 50px; /* Bordes completamente redondos */
+    border: 2px solid #D90000;
+    transition: all 0.3s ease;
+    
+    /* Sombra roja inicial */
+    box-shadow: 0 5px 15px rgba(217, 0, 0, 0.3);
+}
+
+/* Efecto Hover (Al pasar el mouse) */
+.btn-detalle:hover {
+    background-color: transparent; /* Se vuelve transparente */
+    color: #D90000; /* Texto rojo */
+    
+    /* Efecto Neón Intenso */
+    box-shadow: 0 0 25px rgba(217, 0, 0, 0.8); 
+    transform: translateY(-3px); /* Se eleva un poco */
+}
+
+/* --- BOTÓN SECUNDARIO: Volver Atrás --- */
+/* Primero posicionamos el contenedor a la izquierda */
+.boton-izq {
+    margin-top: 50px; /* Separación del contenido de arriba */
+    text-align: left; 
+    border-top: 1px solid #333; /* Línea divisoria sutil */
+    padding-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #888; /* Gris discreto por defecto */
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    /* Borde sutil */
+    border: 1px solid #333;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto Hover para el botón de atrás */
+.btn:hover {
+    color: #fff; /* Texto blanco */
+    border-color: #fff; /* Borde blanco */
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    /* Pequeña animación hacia la izquierda */
+    transform: translateX(-5px); 
+}
+
+/* --- ESTILO EXTRA (Para que se vea bien el fondo de la sección) --- */
+/* Esto asegura que las letras se lean si el fondo es oscuro */
+#productores-alejo {
+    background-color: #050505; /* Fondo negro */
+    color: #fff;
+    padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border-top: 5px solid #D90000; /* Detalle rojo arriba */
+}
+
+/* Títulos de los productores */
+#productores-alejo h3 {
+    color: #D90000;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#productores-alejo p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Equipo Bassyy */
+.btn-detalle {
+    display: inline-block;
+    background-color: #D90000; /* Rojo De La Rose */
+    color: #ffffff;
+    padding: 15px 40px; /* Grande y cómodo */
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 50px; /* Bordes completamente redondos */
+    border: 2px solid #D90000;
+    transition: all 0.3s ease;
+    
+    /* Sombra roja inicial */
+    box-shadow: 0 5px 15px rgba(217, 0, 0, 0.3);
+}
+
+/* Efecto Hover (Al pasar el mouse) */
+.btn-detalle:hover {
+    background-color: transparent; /* Se vuelve transparente */
+    color: #D90000; /* Texto rojo */
+    
+    /* Efecto Neón Intenso */
+    box-shadow: 0 0 25px rgba(217, 0, 0, 0.8); 
+    transform: translateY(-3px); /* Se eleva un poco */
+}
+
+/* --- BOTÓN SECUNDARIO: Volver Atrás --- */
+/* Primero posicionamos el contenedor a la izquierda */
+.boton-izq {
+    margin-top: 50px; /* Separación del contenido de arriba */
+    text-align: left; 
+    border-top: 1px solid #333; /* Línea divisoria sutil */
+    padding-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #888; /* Gris discreto por defecto */
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    /* Borde sutil */
+    border: 1px solid #333;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Efecto Hover para el botón de atrás */
+.btn:hover {
+    color: #fff; /* Texto blanco */
+    border-color: #fff; /* Borde blanco */
+    background-color: rgba(255, 255, 255, 0.1);
+    
+    /* Pequeña animación hacia la izquierda */
+    transform: translateX(-5px); 
+}
+
+/* --- ESTILO EXTRA (Para que se vea bien el fondo de la sección) --- */
+/* Esto asegura que las letras se lean si el fondo es oscuro */
+#productores-bassy {
+    background-color: #050505; /* Fondo negro */
+    color: #fff;
+    padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border-top: 5px solid #D90000; /* Detalle rojo arriba */
+}
+
+#productores-deiv h3 {
+    color: #D90000;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#productores-deiv p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.btn-detalle {
+    display: inline-block;
+    background-color: #D90000;
+    color: #ffffff;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    border: 2px solid #D90000;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(217, 0, 0, 0.3);
+}
+
+.btn-detalle:hover {
+    background-color: transparent;
+    color: #D90000;
+    box-shadow: 0 0 25px rgba(217, 0, 0, 0.8); 
+    transform: translateY(-3px);
+}
+
+.boton-izq {
+    margin-top: 50px;
+    text-align: left; 
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #888;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #333;
+    padding: 10px 25px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: #fff;
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(-5px); 
+}
+
+#productores-alejo {
+    background-color: #050505;
+    color: #fff;
+    padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border-top: 5px solid #D90000;
+}
+
+#productores-alejo h3 {
+    color: #D90000;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#productores-alejo p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+#productores-bassy {
+    background-color: #050505;
+    color: #fff;
+    padding: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border-top: 5px solid #D90000;
+}
+
+#productores-bassy h3 {
+    color: #D90000;
+    margin-top: 30px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#productores-bassy p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.shows-principal {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px;
+}
+
+.show-tarjeta {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 5px solid #0050f0; 
+}
+
+.show-tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 80, 240, 0.15);
+    background-color: #fff;
+}
+
+.show-tarjeta h2 {
+    color: #000;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ED0000;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.show-tarjeta p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+.show-omar, .show-dela, .show-alejo, .show-deiv, .show-bassyy {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-video, .btn-tickets {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.btn-video {
+    background-color: transparent;
+    border: 2px solid #ED0000;
+    color: #ED0000;
+}
+
+.btn-video:hover {
+    background-color: #ED0000;
+    color: white;
+}
+
+.btn-tickets {
+    background-color: #0050f0;
+    border: 2px solid #0050f0;
+    color: white;
+}
+
+.btn-tickets:hover {
+    background-color: #003bb3;
+    border-color: #003bb3;
+    box-shadow: 0 5px 15px rgba(0, 80, 240, 0.3);
+}
