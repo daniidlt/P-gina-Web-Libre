@@ -1067,6 +1067,7 @@ button:hover::after {
     transform: translateX(-5px); 
 }
 
+/* Equipo dela */
 #productores-dela {
     background-color: #050505;
     color: #fff;
@@ -1077,7 +1078,6 @@ button:hover::after {
     border-top: 5px solid #D90000; 
 }
 
-/* Títulos de los productores */
 #productores-dela h3 {
     color: #D90000;
     margin-top: 30px;
@@ -1093,15 +1093,15 @@ button:hover::after {
 /* Equipo Omar */
 .btn-detalle {
     display: inline-block;
-    background-color: #D90000; /* Rojo De La Rose */
+    background-color: #D90000; 
     color: #ffffff;
-    padding: 15px 40px; /* Grande y cómodo */
+    padding: 15px 40px;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 1px;
-    border-radius: 50px; /* Bordes completamente redondos */
+    border-radius: 50px;
     border: 2px solid #D90000;
     transition: all 0.3s ease;
     
@@ -1109,22 +1109,18 @@ button:hover::after {
     box-shadow: 0 5px 15px rgba(217, 0, 0, 0.3);
 }
 
-/* Efecto Hover (Al pasar el mouse) */
 .btn-detalle:hover {
-    background-color: transparent; /* Se vuelve transparente */
-    color: #D90000; /* Texto rojo */
+    background-color: transparent; 
+    color: #D90000; 
     
-    /* Efecto Neón Intenso */
     box-shadow: 0 0 25px rgba(217, 0, 0, 0.8); 
-    transform: translateY(-3px); /* Se eleva un poco */
+    transform: translateY(-3px); 
 }
 
-/* --- BOTÓN SECUNDARIO: Volver Atrás --- */
-/* Primero posicionamos el contenedor a la izquierda */
 .boton-izq {
-    margin-top: 50px; /* Separación del contenido de arriba */
+    margin-top: 50px; 
     text-align: left; 
-    border-top: 1px solid #333; /* Línea divisoria sutil */
+    border-top: 1px solid #333; 
     padding-top: 20px;
 }
 
@@ -1132,12 +1128,11 @@ button:hover::after {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #888; /* Gris discreto por defecto */
+    color: #888; 
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
     
-    /* Borde sutil */
     border: 1px solid #333;
     padding: 10px 25px;
     border-radius: 8px;
@@ -1159,10 +1154,9 @@ button:hover::after {
     max-width: 900px;
     margin: 0 auto;
     border-radius: 15px;
-    border-top: 5px solid #D90000; /* Detalle rojo arriba */
+    border-top: 5px solid #D90000; 
 }
 
-/* Títulos de los productores */
 #productores-ousi h3 {
     color: #D90000;
     margin-top: 30px;
@@ -1177,38 +1171,32 @@ button:hover::after {
 
 .btn-detalle {
     display: inline-block;
-    background-color: #D90000; /* Rojo De La Rose */
+    background-color: #D90000; 
     color: #ffffff;
-    padding: 15px 40px; /* Grande y cómodo */
+    padding: 15px 40px; 
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 1px;
-    border-radius: 50px; /* Bordes completamente redondos */
+    border-radius: 50px; 
     border: 2px solid #D90000;
     transition: all 0.3s ease;
     
-    /* Sombra roja inicial */
     box-shadow: 0 5px 15px rgba(217, 0, 0, 0.3);
 }
 
-/* Efecto Hover (Al pasar el mouse) */
 .btn-detalle:hover {
-    background-color: transparent; /* Se vuelve transparente */
-    color: #D90000; /* Texto rojo */
-    
-    /* Efecto Neón Intenso */
+    background-color: transparent; 
+    color: #D90000; 
     box-shadow: 0 0 25px rgba(217, 0, 0, 0.8); 
-    transform: translateY(-3px); /* Se eleva un poco */
+    transform: translateY(-3px); 
 }
 
-/* --- BOTÓN SECUNDARIO: Volver Atrás --- */
-/* Primero posicionamos el contenedor a la izquierda */
 .boton-izq {
-    margin-top: 50px; /* Separación del contenido de arriba */
+    margin-top: 50px; 
     text-align: left; 
-    border-top: 1px solid #333; /* Línea divisoria sutil */
+    border-top: 1px solid #333; 
     padding-top: 20px;
 }
 
@@ -1216,41 +1204,33 @@ button:hover::after {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #888; /* Gris discreto por defecto */
+    color: #888; 
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
-    
-    /* Borde sutil */
     border: 1px solid #333;
     padding: 10px 25px;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 
-/* Efecto Hover para el botón de atrás */
 .btn:hover {
-    color: #fff; /* Texto blanco */
-    border-color: #fff; /* Borde blanco */
+    color: #fff; 
+    border-color: #fff; 
     background-color: rgba(255, 255, 255, 0.1);
-    
-    /* Pequeña animación hacia la izquierda */
     transform: translateX(-5px); 
 }
 
-/* --- ESTILO EXTRA (Para que se vea bien el fondo de la sección) --- */
-/* Esto asegura que las letras se lean si el fondo es oscuro */
 #productores-deiv {
-    background-color: #050505; /* Fondo negro */
+    background-color: #050505; 
     color: #fff;
     padding: 50px;
     max-width: 900px;
     margin: 0 auto;
     border-radius: 15px;
-    border-top: 5px solid #D90000; /* Detalle rojo arriba */
+    border-top: 5px solid #D90000; 
 }
 
-/* Títulos de los productores */
 #productores-deiv h3 {
     color: #D90000;
     margin-top: 30px;
@@ -1263,41 +1243,35 @@ button:hover::after {
     line-height: 1.6;
 }
 
-/* Equipo Alejo */
 .btn-detalle {
     display: inline-block;
-    background-color: #D90000; /* Rojo De La Rose */
+    background-color: #D90000; 
     color: #ffffff;
-    padding: 15px 40px; /* Grande y cómodo */
+    padding: 15px 40px; 
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 1px;
-    border-radius: 50px; /* Bordes completamente redondos */
+    border-radius: 50px; 
     border: 2px solid #D90000;
     transition: all 0.3s ease;
     
-    /* Sombra roja inicial */
     box-shadow: 0 5px 15px rgba(217, 0, 0, 0.3);
 }
 
-/* Efecto Hover (Al pasar el mouse) */
 .btn-detalle:hover {
-    background-color: transparent; /* Se vuelve transparente */
-    color: #D90000; /* Texto rojo */
+    background-color: transparent; 
+    color: #D90000; 
     
-    /* Efecto Neón Intenso */
     box-shadow: 0 0 25px rgba(217, 0, 0, 0.8); 
-    transform: translateY(-3px); /* Se eleva un poco */
+    transform: translateY(-3px); 
 }
 
-/* --- BOTÓN SECUNDARIO: Volver Atrás --- */
-/* Primero posicionamos el contenedor a la izquierda */
 .boton-izq {
-    margin-top: 50px; /* Separación del contenido de arriba */
+    margin-top: 50px; 
     text-align: left; 
-    border-top: 1px solid #333; /* Línea divisoria sutil */
+    border-top: 1px solid #333; 
     padding-top: 20px;
 }
 
@@ -1305,7 +1279,7 @@ button:hover::after {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #888; /* Gris discreto por defecto */
+    color: #888; 
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -1317,29 +1291,23 @@ button:hover::after {
     transition: all 0.3s ease;
 }
 
-/* Efecto Hover para el botón de atrás */
 .btn:hover {
-    color: #fff; /* Texto blanco */
-    border-color: #fff; /* Borde blanco */
+    color: #fff; 
+    border-color: #fff; 
     background-color: rgba(255, 255, 255, 0.1);
-    
-    /* Pequeña animación hacia la izquierda */
     transform: translateX(-5px); 
 }
 
-/* --- ESTILO EXTRA (Para que se vea bien el fondo de la sección) --- */
-/* Esto asegura que las letras se lean si el fondo es oscuro */
 #productores-alejo {
-    background-color: #050505; /* Fondo negro */
+    background-color: #050505; 
     color: #fff;
     padding: 50px;
     max-width: 900px;
     margin: 0 auto;
     border-radius: 15px;
-    border-top: 5px solid #D90000; /* Detalle rojo arriba */
+    border-top: 5px solid #D90000; 
 }
 
-/* Títulos de los productores */
 #productores-alejo h3 {
     color: #D90000;
     margin-top: 30px;
@@ -1355,38 +1323,33 @@ button:hover::after {
 /* Equipo Bassyy */
 .btn-detalle {
     display: inline-block;
-    background-color: #D90000; /* Rojo De La Rose */
+    background-color: #D90000; 
     color: #ffffff;
-    padding: 15px 40px; /* Grande y cómodo */
+    padding: 15px 40px; 
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 1px;
-    border-radius: 50px; /* Bordes completamente redondos */
+    border-radius: 50px; 
     border: 2px solid #D90000;
     transition: all 0.3s ease;
     
-    /* Sombra roja inicial */
     box-shadow: 0 5px 15px rgba(217, 0, 0, 0.3);
 }
 
-/* Efecto Hover (Al pasar el mouse) */
+
 .btn-detalle:hover {
-    background-color: transparent; /* Se vuelve transparente */
-    color: #D90000; /* Texto rojo */
-    
-    /* Efecto Neón Intenso */
+    background-color: transparent; 
+    color: #D90000; 
     box-shadow: 0 0 25px rgba(217, 0, 0, 0.8); 
-    transform: translateY(-3px); /* Se eleva un poco */
+    transform: translateY(-3px); 
 }
 
-/* --- BOTÓN SECUNDARIO: Volver Atrás --- */
-/* Primero posicionamos el contenedor a la izquierda */
 .boton-izq {
-    margin-top: 50px; /* Separación del contenido de arriba */
+    margin-top: 50px; 
     text-align: left; 
-    border-top: 1px solid #333; /* Línea divisoria sutil */
+    border-top: 1px solid #333; 
     padding-top: 20px;
 }
 
@@ -1394,38 +1357,33 @@ button:hover::after {
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: #888; /* Gris discreto por defecto */
+    color: #888; 
     font-size: 0.9rem;
     font-weight: 600;
     text-transform: uppercase;
     
-    /* Borde sutil */
     border: 1px solid #333;
     padding: 10px 25px;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 
-/* Efecto Hover para el botón de atrás */
 .btn:hover {
-    color: #fff; /* Texto blanco */
-    border-color: #fff; /* Borde blanco */
+    color: #fff; 
+    border-color: #fff; 
     background-color: rgba(255, 255, 255, 0.1);
     
-    /* Pequeña animación hacia la izquierda */
     transform: translateX(-5px); 
 }
 
-/* --- ESTILO EXTRA (Para que se vea bien el fondo de la sección) --- */
-/* Esto asegura que las letras se lean si el fondo es oscuro */
 #productores-bassy {
-    background-color: #050505; /* Fondo negro */
+    background-color: #050505; 
     color: #fff;
     padding: 50px;
     max-width: 900px;
     margin: 0 auto;
     border-radius: 15px;
-    border-top: 5px solid #D90000; /* Detalle rojo arriba */
+    border-top: 5px solid #D90000; 
 }
 
 #productores-deiv h3 {
