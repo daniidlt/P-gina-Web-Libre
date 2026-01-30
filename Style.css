@@ -1573,3 +1573,112 @@ button:hover::after {
     border-color: #003bb3;
     box-shadow: 0 5px 15px rgba(0, 80, 240, 0.3);
 }
+
+/* MEDIA */
+/* =========================================================
+   9. MEDIA QUERIES (ADAPTACIÓN A MÓVILES Y TABLETS)
+   ========================================================= */
+
+/* --- TABLETS (Hasta 1024px) --- */
+@media screen and (max-width: 1024px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    section.delarose-principal,
+    section.omar-principal,
+    section.deiv-principal,
+    section.alejo-principal,
+    section.bassy-principal {
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+    }
+
+    .duo-delarose, .duo-omar, .duo-deiv, .duo-alejo {
+        grid-column: 1 / -1 !important;
+    }
+}
+
+/* --- MÓVILES (Hasta 768px) --- */
+@media screen and (max-width: 768px) {
+    
+    body { font-size: 16px; }
+
+    header { padding: 50px 15px; }
+    header h1 { font-size: 1.8rem; }
+    header nav ul { gap: 10px; }
+    header nav ul li a { padding: 8px 15px; font-size: 0.9rem; }
+
+    main { padding: 0 15px; margin-top: 20px; }
+    section { padding: 25px 20px; }
+
+    section.delarose-principal,
+    section.omar-principal,
+    section.deiv-principal,
+    section.alejo-principal,
+    section.bassy-principal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+    .delarose-principal article, 
+    .omar-principal article,
+    .deiv-principal article,
+    .alejo-principal article,
+    .bassy-principal article,
+    .delarose-principal button,
+    .omar-principal button,
+    .deiv-principal button,
+    .alejo-principal button,
+    .bassy-principal button {
+        grid-column: auto !important;
+        grid-row: auto !important;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .delarose-album, .omar-album, .deiv-album, .alejo-album1, .bassy-cantante {
+        order: -1;
+    }
+    
+    .delarose-principal h2, .omar-principal h2, .deiv-principal h2, .alejo-principal h2, .bassy-principal h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .tracklist-dela ol, .tracklist-omar ol, .tracklist-deiv ol, .tracklist-alejo ol, .tracklist-bassyy ol {
+        column-count: 1;
+    }
+
+    #atras-dela, #verequipo-dela, #siguiente-dela,
+    #atras-omar, #verequipo-omar, #siguiente-omar,
+    #atras-deiv, #verequipo-deiv, #siguiente-deiv,
+    #atras-alejo, #verequipo-alejo, #siguiente-alejo,
+    #atras-bassyy, #verequipo-bassyy {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .footer-redes ul { justify-content: center; }
+    
+    .btn-detalle { width: 100%; padding: 15px 10px; font-size: 0.9rem; }
+    iframe { height: 200px; }
+}
